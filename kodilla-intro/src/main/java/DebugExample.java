@@ -2,21 +2,23 @@ public class DebugExample {
     public static void main(String[] args) {
         int firstNumber = 11;
         int secondNumber = 22;
+        String exe = myExe();
 
         System.out.println(firstNumber);
         System.out.println(secondNumber);
+        System.out.println(exe);
 
         if (firstNumber > secondNumber) {
             subtractAndDisplay(firstNumber, secondNumber);
         } else {
-            sumAndDisplay(firstNumber, secondNumber);
+            String myExe;
         }
     }
 
-    private static void sumAndDisplay(int a, int b) {
-        int result = a + b;
+    private static String myExe() {
+       String text = "Hello Jacob";
 
-        System.out.println(result);
+        return text;
     }
 
     private static void subtractAndDisplay(int a, int b) {

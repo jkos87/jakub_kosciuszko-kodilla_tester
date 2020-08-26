@@ -10,12 +10,8 @@ public class MainExtended {
         System.out.println(carClass);
         boolean isGoodTester = true;
         System.out.println(isGoodTester);
-        String kW = "Witammy na kursie";
-        System.out.print(kW);
-        int kursNum = 33;
-        System.out.println(kursNum);
-        int num1 = 10, num2 = 20;
-        System.out.println(num1 + num2);
+        String myBike = "Giant Thalon";
+        System.out.println(myBike);
     }
 }
 

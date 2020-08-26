@@ -1,12 +1,12 @@
 public class Leapyear {
     public static void main(String[] args) {
-        System.out.println("Hello from Module0");
         int year = 2020;
+        System.out.print(year);
 
         if ((year%4 ==0 && year%100!=0) || (year%400 ==0)){
-            System.out.println("Leap year");
+            System.out.println(" is leap year");
         } else {
-            System.out.println("Is not leapr year.");
+            System.out.println(" is not leap year.");
         }
     }
 }
