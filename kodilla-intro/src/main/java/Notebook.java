@@ -1,10 +1,20 @@
 public class Notebook {
+
+        public static void main(String[] args) {
+
+                Notebook notebook = new Notebook(600, 1000, 2018);
+                System.out.println(notebook.weight + "g" + " " + notebook.price + "zł " + notebook.year);
+                notebook.checkPrice();
+                notebook.checkWeigth();
+                notebook.checkYear();
+        }
+
         int weight;
         int price;
         int year;
 
         public Notebook(int weight, int price, int year) {
-                this.weight = weight;
+                this.weight = weight; // tutaj sa 3 zmienie i wiemy ile ich jest
                 this.price = price;
                 this.year = year;
         }
