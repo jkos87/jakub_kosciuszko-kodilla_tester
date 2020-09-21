@@ -6,6 +6,9 @@ public class SimpleArray {
         movies[2] = "Szybcy i wściekli 6";
         movies[3] = "Złoto dezerterów";
 
+        String movie = movies[2];
+        System.out.println(movie);
+
 
     for ( int i=0; i<movies.length; i++ ){
         System.out.println(movies[i]);

@@ -9,9 +9,9 @@ public class Notebook {
                 notebook.checkYear();
         }
 
-        int weight;
+       int weight;
         int price;
-        int year;
+       int year;
 
         public Notebook(int weight, int price, int year) {
                 this.weight = weight; // tutaj sa 3 zmienie i wiemy ile ich jest
