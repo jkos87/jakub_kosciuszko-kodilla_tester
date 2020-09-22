@@ -29,7 +29,7 @@ public class Grades {
 
     public int sumGrades(int [] grades) {
 
-        int result = 0; //
+        int result = 0;
         for (int i = 0; i < grades.length; i++) {
             result = result + grades[i];
         }
