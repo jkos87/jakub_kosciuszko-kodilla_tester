@@ -10,19 +10,18 @@ public class User {
 
         int result = 0;
         for (int i = 0; i < users.length; i++) {
-            result = (result + users[i].uAge);
+            result = (result + users[i].uAge); //users[i].getAge()
         }
         int averAge = result / users.length;
         System.out.println(averAge);
 
         for (int i = 0; i < users.length; i++) {
-            if (users[i].uAge < averAge)
-            {
+            if (users[i].uAge < averAge) {
                 System.out.println(users[i].uName);
-            } else { }
+            } else {
+            }
         }
     }
-
 
     String uName;
     int uAge;
@@ -32,9 +31,11 @@ public class User {
         this.uName = uName;
         this.uAge = uAge;
     }
+
     public String getuName() {
         return uName;
     }
+
     public int getuAge() {
         return uAge;
     }
