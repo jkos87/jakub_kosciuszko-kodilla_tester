@@ -18,16 +18,16 @@ public class Notebook {
                 this.price = price;
                 this.year = year;
         }
-        public void checkPrice() {
+        public String checkPrice() {
                 if (this.price < 600) {
-                        System.out.println("This notebook is cheap.");
+                        return "This notebook is cheap.";
                 }
                 else if (this.price >=600 && this.price <= 1000) {
-                        System.out.println("This price is good.");
+                        return("This price is good.");
                 }
 
                 else {
-                        System.out.println("This notebook is expensive.");
+                        return("This notebook is expensive.");
                 }
         }
         public void checkWeigth() {

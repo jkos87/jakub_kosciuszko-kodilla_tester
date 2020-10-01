@@ -5,6 +5,7 @@ public class HelloWorld {
         System.out.println("HellWorld!!");
         System.out.println("Kuba");
         System.out.println(33);
-        System.out.print('K');
+        System.out.println('K');
+
     }
 }

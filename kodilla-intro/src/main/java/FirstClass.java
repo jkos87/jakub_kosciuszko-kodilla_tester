@@ -3,7 +3,8 @@ public class FirstClass {
 
         Notebook notebook = new Notebook(600, 1000, 2018);
         System.out.println(notebook.weight + "g" + " " + notebook.price + "zł " + notebook.year);
-        notebook.checkPrice();
+        String result =notebook.checkPrice();
+        System.out.println(result);
         notebook.checkWeigth();
         notebook.checkYear();
 
