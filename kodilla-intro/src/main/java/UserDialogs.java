@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class UserDialogs {
-    public static String getUserName() {
+
+
+    public  String getUserName() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Enter your name");
@@ -12,4 +14,5 @@ public class UserDialogs {
             System.out.println("Name is too short. Try again.");
         }
     }
+
 }

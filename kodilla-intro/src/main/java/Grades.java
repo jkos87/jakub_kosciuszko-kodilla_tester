@@ -5,7 +5,6 @@ public class Grades {
         grades.add(4);
         grades.add(6);
 
-
         System.out.println(grades.lastGrade());
         System.out.println(grades.sumGrades(grades.grades));
         System.out.print(grades.averGrade());
@@ -48,6 +47,7 @@ public class Grades {
         }
         return result/this.size;
     }
+
 }
 
 

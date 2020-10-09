@@ -6,7 +6,7 @@ public class MainExtended {
         System.out.println(myAge);
         double myHeight = 1.73;
         System.out.println(myHeight);
-        char carClass = 'X';
+        char carClass = 'S';
         System.out.println(carClass);
         boolean isGoodTester = true;
         System.out.println(isGoodTester);
