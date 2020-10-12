@@ -17,5 +17,7 @@ public class Application {
         else {
             duck.giveVoice();
         }
+
+
     }
 }
