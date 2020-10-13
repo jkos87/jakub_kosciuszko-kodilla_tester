@@ -10,17 +10,22 @@ public class Person {
         this.age = age;
         this.job = job;
     }
-
-
+   /* public static Job of(String name, Job job){
+         Job job1 = new Job() {
+            @Override
+            public String getResponsibilities() {
+                return super.getResponsibilities();
+            }
+        };
+    }*/
 
     public static void main(String[] args) {
-        Doctor doctor = new Doctor();
-        System.out.println(doctor.getResponsibilities());
+        Job job = new Plumber(); //dlaczego musimy utworzyc konsrtuktor po klasie dziedziczacej
+        //System.out.println(job.responsibilities);
 
-        Nurse n1 = new Nurse();
-        System.out.println(n1.getResponsibilities());
-       // Doctor p1 = new Person("Max", 22,"dd");
-
+        Person person = new Person("Ted",33,job); // i dopiero wtedy mozemy utworzyc obiekt nowje klasy
+        System.out.println(person.job.getSalary()); // i przypisac do zmiennej job metody z poprzedniej klasy
+        System.out.println(person.job.responsibilities); // a nawet do zmiennej job przypisac zadelklarowana zmienna responisibilities
         }
 
 }
