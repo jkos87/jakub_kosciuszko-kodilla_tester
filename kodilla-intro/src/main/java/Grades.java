@@ -43,7 +43,7 @@ public class Grades {
     public double averGrade() {
         double result = 0;
         for (int i = 0; i < grades.length; i++) {
-        result =(result + grades[i]);
+        result += grades[i];
         }
         return result/this.size;
     }

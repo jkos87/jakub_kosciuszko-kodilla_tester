@@ -7,9 +7,9 @@ public class Colors {
     }
 
     public static void main (String[] args){
-        System.out.println("Select color: G-Grey, B-Black, O-Orange, S-Silver");
+        System.out.println("Select color: R-Red, B-Black, O-Orange, S-Silver");
         UserColors color1 = new UserColors();
-        String colorFirstLetter = UserColors.getUserFirstLetter();
+        String colorFirstLetter = UserColors.getUserFirstLetter().toUpperCase();
 
     MyColors myColor = MyColors.valueOf(colorFirstLetter);
 
