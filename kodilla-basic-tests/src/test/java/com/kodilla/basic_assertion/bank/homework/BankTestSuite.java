@@ -77,6 +77,17 @@ public class BankTestSuite {
 
         assertEquals(3, bank1.bankDepositCount());
     }
+    @Test
+    public void shouldGetBalance(){
+    cm1.add(200);
+    cm1.add(-300);
+    cm2.add(-500);
+    cm2.add(00);
 
+    bank1.add(cm1);
+    bank1.add(cm2);
+
+    assertEquals(-600,bank1.balance());
+    }
 }
 
