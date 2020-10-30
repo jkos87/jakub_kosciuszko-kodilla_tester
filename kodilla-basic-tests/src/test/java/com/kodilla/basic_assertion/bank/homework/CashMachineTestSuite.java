@@ -25,7 +25,7 @@ public class CashMachineTestSuite {
 
 
         int[] transaction = transaction1.getAmount();
-        assertEquals(2, transaction.length);
+        assertEquals(3, transaction.length);
         assertEquals(400, transaction[0]);
         assertEquals(-200, transaction[1]);
     }
