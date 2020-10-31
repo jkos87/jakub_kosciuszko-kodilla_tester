@@ -18,13 +18,13 @@ public class VW implements Car {
     @Override
     public void increaseSpeed() {
         speed = speed + increaseValue;
-        System.out.println(speed);
+
     }
 
     @Override
     public void decreaseSpeed() {
         speed = speed - decreaseValue;
-        System.out.println(speed);
+
     }
 
 
