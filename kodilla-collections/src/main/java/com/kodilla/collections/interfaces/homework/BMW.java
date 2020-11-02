@@ -1,5 +1,7 @@
 package com.kodilla.collections.interfaces.homework;
 
+import com.kodilla.collections.arrays.homework.CarUtils;
+
 public class BMW implements Car {
 
     int speed;

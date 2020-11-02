@@ -7,6 +7,14 @@ public class Square implements Shape {
         this.width = width;
     }
 
+    @Override
+    public String toString() {
+        return "Square{" +
+                "width=" + width +
+                '}';
+    }
+
+
     public double getArea(){
         return width * width;
     }
