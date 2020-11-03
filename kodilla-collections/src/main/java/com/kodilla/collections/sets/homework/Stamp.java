@@ -32,9 +32,9 @@ public class Stamp {
     @Override
     public String toString() {
         return "Stamp{" +
-                "stampName='" + stampName + '\'' +
-                ", stampDimension='" + stampDimension + '\'' +
-                ", stampStamped=" + stampStamped +
+                "stampName '" + stampName + '\'' +
+                ", stampDimension " + stampDimension + '\'' +
+                ", isStamped " + stampStamped +
                 '}';
     }
 }
