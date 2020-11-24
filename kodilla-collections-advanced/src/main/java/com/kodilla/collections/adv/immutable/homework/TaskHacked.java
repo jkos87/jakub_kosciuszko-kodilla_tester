@@ -12,4 +12,8 @@ public class TaskHacked  extends Task{
         newDuration = duration1;
     }
 
+    @Override
+    public int getDuration() {
+        return newDuration;
+    }
 }

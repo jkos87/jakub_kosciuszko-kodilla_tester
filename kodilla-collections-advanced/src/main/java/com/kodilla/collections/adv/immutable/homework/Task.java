@@ -1,6 +1,6 @@
 package com.kodilla.collections.adv.immutable.homework;
 
-public final class Task {
+public  class Task {
     protected String title;
     protected final int duration;
 
@@ -9,11 +9,11 @@ public final class Task {
         this.duration = duration;
     }
 
-    public final String getTitle() {
+    public  String getTitle() {
         return title;
     }
 
-    public final int getDuration() {
+    public  int getDuration() {
         return duration;
     }
 }
