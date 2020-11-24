@@ -12,7 +12,7 @@ public class BookManager {
         Set<Book> books = new HashSet<>();
         Book book1 = new Book(title, author);
 
-        if (books.add(new Book(title, author)))
+        if (books.add(book1))
             return book1;
         else
             return null;
