@@ -7,9 +7,9 @@ public class CarRace {
         doRace(opel);
         System.out.println("Opel speed is " + opel.getSpeed());
 
-       VW vw = new VW(5);
+      /* VW vw = new VW(5);
         doRace(vw);
-        System.out.println("Vw speed is " + vw.getSpeed());
+        System.out.println("Vw speed is " + vw.getSpeed());*/
 
         BMW bmw = new BMW(5);
         doRace(bmw);

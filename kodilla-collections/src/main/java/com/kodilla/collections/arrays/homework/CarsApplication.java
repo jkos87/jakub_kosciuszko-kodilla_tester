@@ -10,11 +10,13 @@ import java.util.Random;
 public class CarsApplication {
 
     public static void main(String[] args) {
-        Car[] cars = new Car[15];
-        for (int i = 0; i< cars.length; i++)
+        Car[] cars = new Car[15];           // List<Car> cars = new ArrayList<>();
+        for (int i = 0; i< cars.length; i++)       // for (int i =0; i<15; i++)
             cars[i] = drawnCar();
-        for (Car car : cars)
+        for (Car car : cars) {
             CarUtils.describeCar(car);
+            System.out.println(car);  //wysiwetlic to co dzieje sie w petli for-each
+        }
     }
 
     public static Car drawnCar(){
