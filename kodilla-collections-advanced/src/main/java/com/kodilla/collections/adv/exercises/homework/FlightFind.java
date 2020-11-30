@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlightFind {
+    private List<Flight> flights;
+
+    public FlightFind(List<Flight> flights) {
+        this.flights = flights;
+    }
 
     public List<Flight> findFlightsFrom(String departure) {
         List<Flight> result = new ArrayList<>();
