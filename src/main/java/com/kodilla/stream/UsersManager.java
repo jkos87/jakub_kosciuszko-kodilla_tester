@@ -1,12 +1,23 @@
 package com.kodilla.stream;
 
-public class UsersManager {
+import java.util.List;
+import java.util.stream.Collectors;
 
+public class UsersManager {
         public static void main (String[]args){
-            UsersRepository.getUsersList()
+            List<String> usernames = UsersRepository.getUsersList()
                     .stream()
-                    .map(u -> u.getAge())
-                    .map(z -> z.getClass())
-                    .forEach(un -> System.out.println(un));
+                    .filter(u -> u.getGroup().equals("Chemists"))
+                    .map(UsersManager::getUserName)
+                    .collect(Collectors.toList());
+            System.out.println(usernames);
         }
+
+    public static String getUserName(User user) {
+        return user.getUsername();
+    }
+
+    public static String getUserGroup(User user){
+            return user.getGroup();
+    }
     }
