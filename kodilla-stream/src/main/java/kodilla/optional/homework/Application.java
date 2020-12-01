@@ -1,4 +1,4 @@
-package com.kodilla.optional.homework;
+package kodilla.optional.homework;
 
 import java.util.ArrayList;
 import java.util.List;

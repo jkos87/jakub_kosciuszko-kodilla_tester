@@ -1,6 +1,6 @@
-package com.kodilla.optional;
+package kodilla.optional;
 
-import com.kodilla.stream.User;
+import kodilla.stream.User;
 
 import java.util.Optional;
 

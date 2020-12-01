@@ -1,4 +1,4 @@
-package com.kodilla.optional.homework;
+package kodilla.optional.homework;
 
 public class Student {
     String name;

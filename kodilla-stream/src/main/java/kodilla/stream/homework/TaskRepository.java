@@ -1,4 +1,4 @@
-package com.kodilla.stream.homework;
+package kodilla.stream.homework;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

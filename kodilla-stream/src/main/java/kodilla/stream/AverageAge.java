@@ -1,4 +1,4 @@
-package com.kodilla.stream;
+package kodilla.stream;
 
 public class AverageAge {
     public static void main(String[] args) {

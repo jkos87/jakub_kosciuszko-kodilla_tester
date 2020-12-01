@@ -1,4 +1,4 @@
-package com.kodilla.stream;
+package kodilla.stream;
 
 import java.util.ArrayList;
 import java.util.List;
