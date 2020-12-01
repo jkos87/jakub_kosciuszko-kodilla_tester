@@ -10,7 +10,7 @@ public class Application {
         students.add(new Student("Adam ",new Teacher("Klaus Nauczyciel")));
         students.add((new Student("Bazyl ",new Teacher("Hieroni Nauczyciel"))));
         students.add(new Student("Max",null));
-        //students.add(new Student("Kris",null));
+        students.add(new Student("Kris",null));
 
 
 
@@ -18,12 +18,13 @@ public class Application {
         for (Student student: students) {
 
             Optional<Teacher> optionalStudent = Optional.ofNullable(student.getTeacher());
-
-            //String check = optionalStudent.orElse(student.teacher.getName());
-
-            //String teacheName = optionalStudent.orElse(Teacher.getName());
+            
+            optionalStudent.ifPresentOrElse(
+                    x -> System.out.println(optionalStudent),
+                    () -> System.out.println(student.getName() + " <unnamed>"));
+            //String teacherName = optionalStudent.orElse(Teacher.getName());
            // optionalStudent.orElse(student.teacher.getName());
-            System.out.println(optionalStudent);
+            //System.out.println(optionalStudent);
             //System.out.println(student.getName() + student.teacher.getName());
 
         }
