@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FlightFindTestSuite {
-    @Test
+    /*@Test
     public void findeFlightsFromTest(){
         FlightFind flightFind = new FlightFind(FlightRepository.getFlightsTable());
 
@@ -19,7 +19,7 @@ class FlightFindTestSuite {
 
         assertEquals(expectedFrom,testFrom);
 
-    }
+
 
     @Test
             public void findeFlightsTo(){
@@ -32,5 +32,5 @@ class FlightFindTestSuite {
 
         assertEquals(expectedTo, testTo);
     }
-
+*/
 }

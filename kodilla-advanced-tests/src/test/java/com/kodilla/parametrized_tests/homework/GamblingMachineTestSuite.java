@@ -38,7 +38,7 @@ class GamblingMachineTestSuite {
     }
     @ParameterizedTest
     @CsvFileSource(resources = "/ProperNumbers.csv", delimiter = ',')
-    public void properNumbers (Integer first, Integer second, Integer third, Integer fourth, Integer five, Integer six)  {
+    public void properNumbers (Integer first, Integer second, Integer third, Integer fourth, Integer five, Integer six) throws InvalidNumbersException {
         Set<Integer> numbers = new HashSet<>();
         numbers.add(first);
         numbers.add(second);
@@ -47,11 +47,21 @@ class GamblingMachineTestSuite {
         numbers.add(five);
         numbers.add(six);
 
-      checkTrue(numbers);
+        int result = gamblingMachine.howManyWins(numbers);
+
+        assertTrue(0<=result && result<6);
+
+
+        //for (numbers : gamblingMachine.howManyWins(Set<Integer> userNumber))
+
+       //int proper = gamblingMachine.howManyWins(String.valueOf(numbers));
+
         System.out.printf(String.valueOf(numbers));
+
     }
 
-    private void checkTrue(Set<Integer> howManyWins) {
-        return;
-    }
+  /* private Set<Integer> convertToProper(String test){
+        Set<Integer> number = new HashSet<>();
+        for (number : gamblingMachine.howManyWins()
+    } */
 }
