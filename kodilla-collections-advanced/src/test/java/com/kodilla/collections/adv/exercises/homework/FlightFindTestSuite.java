@@ -8,18 +8,19 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FlightFindTestSuite {
-    /*@Test
-    public void findeFlightsFromTest(){
+    @Test
+    public void findeFlightsFromTest() {
         FlightFind flightFind = new FlightFind(FlightRepository.getFlightsTable());
 
         List<Flight> testFrom = flightFind.findFlightsFrom("Warsaw");
 
         List<Flight> expectedFrom = new ArrayList<>();
-        expectedFrom.add(new Flight("Warsaw","Tokio"));
+        expectedFrom.add(new Flight("Warsaw", "Cracow"));
+        expectedFrom.add(new Flight("Warsaw", "Bonn"));
 
-        assertEquals(expectedFrom,testFrom);
+        assertEquals(expectedFrom, testFrom);
 
-
+    }
 
     @Test
             public void findeFlightsTo(){
@@ -28,9 +29,9 @@ class FlightFindTestSuite {
         List<Flight> testTo = flightFind.findFlightsTo("Cracow");
 
         List<Flight> expectedTo = new ArrayList<>();
-        expectedTo.add(new Flight("Berlin","Cracow"));
+        expectedTo.add(new Flight("Warsaw","Cracow"));
 
         assertEquals(expectedTo, testTo);
     }
-*/
+
 }

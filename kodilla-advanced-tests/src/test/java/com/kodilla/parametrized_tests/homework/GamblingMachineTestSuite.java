@@ -60,8 +60,5 @@ class GamblingMachineTestSuite {
 
     }
 
-  /* private Set<Integer> convertToProper(String test){
-        Set<Integer> number = new HashSet<>();
-        for (number : gamblingMachine.howManyWins()
-    } */
+
 }
